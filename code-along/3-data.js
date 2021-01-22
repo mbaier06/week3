@@ -10,11 +10,27 @@
 //     { icon: '🦄', when: '2020-10-26 08:00:00', what: 'Riding a unicorn' }
 //   ]
 // }
+
+let profile = {
+  name: 'Ben',
+  location:'Chicago',
+  status: "Teaching"
+}
+
+//console.log(profile.status)
+
+let shoppingList = ['eggs', 'bread', 'milk']
+shoppingList.push('fish')
+console.log(shoppingList)
+
+let lotteryTicket = [3, 5, 7, 8, 10]
+console.log(lotteryTicket[0])
+
 //  👆 YOUR CODE ENDS HERE. DON'T CHANGE ANY OTHER CODE 👆
 
 // template literals support HTML too!
 output = `
-  <div class="text-4xl">Sweet</div>
+  <div class="text-4xl">${profile[0].status}Sweet</div>
 `
 /*
   this code does the work of writing the output to screen...

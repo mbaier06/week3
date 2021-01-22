@@ -36,5 +36,15 @@ function pageLoad() {
   // 🔥🔥🔥 YOUR CODE GOES HERE 🔥🔥🔥
   console.log(database)
 
+numberOfProducts = database.products.length
+
+products = database.products
+
+let promotion1 = database.promotions[getRandomInt(9)]
+console.log(promotion1)
+
+
+
+
   //  👆 YOUR CODE ENDS HERE. DON'T CHANGE ANY OTHER CODE 👆
 }
