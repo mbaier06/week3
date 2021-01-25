@@ -7,7 +7,7 @@ document.querySelector('.nom-nom-nom').addEventListener('click', (event) => {
   // console.log(dinner)
   let output
 
-  let quantity = 5
+  let quantity = 2
 
   // decision tree
   if (dinner == 'tacos') {

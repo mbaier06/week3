@@ -40,8 +40,40 @@ numberOfProducts = database.products.length
 
 products = database.products
 
-let promotion1 = database.promotions[getRandomInt(9)]
+let promotion1 = database.promotions[getRandomInt(9)] // better way would be to do database.promotions[getRandomInt(database.promotions.length - 1)] instead of hardcoding "9"
 console.log(promotion1)
+promotion1Description = promotion1.description
+
+if (promotion1.type == "shipping") {
+  promotion1Icon = '🚛'
+} else if (promotion1.type == "discount") {
+  promotion1Icon = '🤑'
+} else {
+  promotion1Icon = '🎰'
+}
+
+let promotion2 = database.promotions[getRandomInt(9)]
+promotion2Description = promotion2.description
+
+if (promotion2.type == "shipping") {
+  promotion2Icon = '🚛'
+} else if (promotion2.type == "discount") {
+  promotion2Icon = '🤑'
+} else {
+  promotion2Icon = '🎰'
+}
+
+let promotion3 = database.promotions[getRandomInt(9)]
+promotion3Description = promotion3.description
+
+if (promotion3.type == "shipping") {
+  promotion3Icon = '🚛'
+} else if (promotion3.type == "discount") {
+  promotion3Icon = '🤑'
+} else {
+  promotion3Icon = '🎰'
+}
+
 
 
 
